@@ -1,10 +1,10 @@
-console.log("inicializando gerador...");
-
+console.log("Initializing...");
 const { createCanvas, Image } = require('canvas');
-const canvas = createCanvas(450, 600);
-const ctx = canvas.getContext('2d');
 const fs = require('fs');
 
+    //Size of the target
+    const canvas = createCanvas(450, 600);
+    const ctx = canvas.getContext('2d');
     var index = 0;
     //The name prefix on the file, like "target_A.jpg"
     var targetNamePrefix = "target_";
@@ -52,8 +52,8 @@ const fs = require('fs');
     var objsImagensTitulo =  preLoad(imgs_titulos);
     //The text that will be show on the target,
     //Here i use only letter, but you can configure the function
-    //drawTexte() to words.
-    var letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "L"];
+    //drawTexte() to words size and position.
+    var letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
     function gerarNovo(letra){
         var ii = 0;
@@ -110,7 +110,6 @@ const fs = require('fs');
         return img;
     }
 
-    
     function gerarLetras(letra){
         gerarNovo(letra);
         const out = fs.createWriteStream(__dirname + pathToSave + targetNamePrefix + letra +'.jpg')
