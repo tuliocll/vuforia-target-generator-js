@@ -6,7 +6,7 @@
 
 ## Usage
 **Clone this repository**<br>
-```git clone ```<br>
+```git clone https://github.com/tuliocll/vuforia-target-generator-js.git```<br>
 **Run the npm install**<br>
 ``` npm install ```<br>
 **Run the generator**<br>
